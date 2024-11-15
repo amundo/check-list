@@ -1,0 +1,16 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:marked@15": "15.0.0"
+  },
+  "npm": {
+    "marked@15.0.0": {
+      "integrity": "sha512-0mouKmBROJv/WSHJBPZZyYofUgawMChnD5je/g+aOBXsHDjb/IsnTQj7mnhQZu+qPJmRQ0ecX3mLGEUm3BgwYA=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:marked@15"
+    ]
+  }
+}

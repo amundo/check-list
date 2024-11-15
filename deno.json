@@ -1,5 +1,11 @@
 {
   "tasks": {
-    "build": "pandoc -f markdown -t html --css check-list-docs.css --template=template.html -o check-list-docs.html check-list-docs.md"
+    "build": "pandoc -f markdown -t html --section-divs --css check-list-docs.css --template=template.html -o check-list-docs.html check-list-docs.md"
+  },
+  "fmt": {
+    "semiColons": false
+  },
+  "imports": {
+    "marked": "npm:marked@^15.0.0"
   }
 }
