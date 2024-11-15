@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>check-list</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="check-list.css">
+
+</head>
+<body>
+  <template id="check-list-template">
+    <style>
+      /* Add your CSS styles here */
+      #taskList {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+      }
+      textarea {
+        width: 100%;
+        height: 150px;
+      }
+      button {
+        margin-right: 5px;
+      }
+    </style>
+    <textarea id="inputArea" placeholder="Enter tasks here..."></textarea>
+    <div>
+      <button id="sortInitials">Sort by Initials</button>
+      <button id="sortDone">Sort by Done</button>
+      <button id="sortTask">Sort by Task</button>
+    </div>
+    <ul id="taskList">
+      <!-- Task items will be inserted here -->
+    </ul>
+  </template>
+  
+    <check-list></check-list>  
+
+<script type="module">
+import {CheckList} from './CheckList.js'
+
+window.CheckList = document.querySelector('check-list')
+</script>
+
+</body>
+</html>
